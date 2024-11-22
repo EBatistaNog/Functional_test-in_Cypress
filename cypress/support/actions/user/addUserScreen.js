@@ -1,9 +1,11 @@
+
+
 //www.test.com/user/addUser
 
 export const addUserScreen = {
     // [1.0] Método de inserção de dados
     insertFistName: (firstName) => {
-        cy.get('auth .ft-field-first-name')  // seletor CSS 1.Seleciona o elemento pai com a classe auth 2.Seleciona o elemento filho que tem a classe ft-field-first-name
+        cy.get('auth .ft-field-first-name') 
             .type(firstName);
     },
     insertLastName: (lastName) => {

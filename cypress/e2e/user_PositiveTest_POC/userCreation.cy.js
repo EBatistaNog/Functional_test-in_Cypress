@@ -5,7 +5,7 @@ const firstName = 'firstName';
 const lastName = 'lastName';
 const userName = 'userName';
 const group  = 'group';
-const email = 'email@sharklasers.com';
+const email = 'teste99@sharklasers.com';
 
 describe('Positive test case User Creation', () => {
 
@@ -25,6 +25,16 @@ describe('Positive test case User Creation', () => {
         addUserScreen.clickButtonAddGroup();
         addUserScreen.clickButtonSave();
         addUserScreen.userCreatedSuccessfullyMessage();
+
+       addUserScreen.clickButtonAddGroup();
+       addUserScreen.insertEmail(email);
+       addUserScreen.clickButtonAddGroup();
+       addUserScreen.clickButtonAddGroup();
+       addUserScreen.clickButtonAddGroup();
+       
+       
+
+        
     });
 
    

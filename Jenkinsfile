@@ -1,7 +1,6 @@
 //Groovy
 pipeline {
-    agent any  // significando que qualquer agente disponível pode ser usado no Jenkins 
-
+    agent any 
     parameters {
         choice(name: 'ENV_TYPE', choices: ['dev', 'qa', 'stg', 'prod'], description: 'Choose environment')
         choice(name: 'TEST_TYPE', choices: ['user_creation', 'group_creation'], description: 'Choose test')
@@ -26,13 +25,6 @@ pipeline {
                 sh 'git clone https://github.com/EBatistaNog/Functional_Testing_with_Cypress.git'
             }
         }
-
-        stage('Starting') {
-            steps {
-                sh 'echo starting the tests'
-            }
-        }
-
         stage('Run Cypress Tests') {
             steps {
                 ansiColor('xterm') {

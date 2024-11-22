@@ -5,7 +5,7 @@
   "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:QAuser_creationpositivechrome": "cypress run --spec 'cypress/e2e/user_PositiveTest_POC/userCreation.cy.js' --headed --browser chrome"
+    "cypress:qauser_creationpositivechrome": "cypress run --spec 'cypress/e2e/user_PositiveTest_POC/userCreation.cy.js' --headed --browser chrome"
   },
   "keywords": [],
   "author": "Eduardo Nogueira",
